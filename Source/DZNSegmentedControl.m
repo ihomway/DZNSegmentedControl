@@ -81,14 +81,14 @@
     _adjustsButtonTopInset = YES;
     _disableSelectedSegment = YES;
     _font = [UIFont systemFontOfSize:15.0f];
-    
+	
+	_hairline = [UIView new];
+	_hairline.backgroundColor = [UIColor lightGrayColor];
+	[self addSubview:_hairline];
+	
     _selectionIndicator = [UIView new];
     _selectionIndicator.backgroundColor = self.tintColor;
     [self addSubview:_selectionIndicator];
-    
-    _hairline = [UIView new];
-    _hairline.backgroundColor = [UIColor lightGrayColor];
-    [self addSubview:_hairline];
     
     _colors = [NSMutableDictionary new];
     _counts = [NSMutableArray array];
