@@ -342,8 +342,8 @@
 
 - (CGRect)hairlineRect
 {
-    CGRect frame = CGRectMake(0.0f, 0.0f, self.frame.size.width, 0.5f);
-    frame.origin.y = (self.barPosition > UIBarPositionBottom) ? 0.0f : self.frame.size.height;
+    CGRect frame = CGRectMake(0.0f, 0.0f, self.frame.size.width, 1.0f);
+    frame.origin.y = (self.barPosition > UIBarPositionBottom) ? 0.0f : self.frame.size.height - 1.0f;
     
     return frame;
 }
